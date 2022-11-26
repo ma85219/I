@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Example</title>
+</head>
+<body>
+	<h1>Static</h1>
+	<h1>Dynamic</h1>
+	
+	
+	<script>
+	function init(){
+		var h1tags=document.getElementsByTagName("h1");
+		h1tags[1].onclick=react;
+	}
+	function react(){
+		this.innerHTML = "Clicked!";this.style.color = "red";
+	}
+	onload = init;
+	
+	</script>
+</body>
+</html>
